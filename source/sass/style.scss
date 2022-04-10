@@ -1,0 +1,19 @@
+$color: #ff6347;
+
+body {
+  background-color: $color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.content {
+  background: linear-gradient(white 0%, #008000 50%, #000000 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}

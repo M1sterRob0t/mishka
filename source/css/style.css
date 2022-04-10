@@ -1,0 +1,2 @@
+body{background-color:tomato;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr}.content{background:-webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(50%,green),to(#000));background:linear-gradient(#fff 0,green 50%,#000 100%)}.header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:20px}
+/*# sourceMappingURL=../css/style.css.map */
