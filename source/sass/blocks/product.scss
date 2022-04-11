@@ -1,0 +1,99 @@
+.product {
+  font-family: 'Open Sans';
+  font-style: normal;
+
+  padding: 0 30px;
+  padding-top: 32px;
+  padding-bottom: 36px;
+
+  background-color: #ffffff;
+  background-image: url("../../img/zigzag-line-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.product__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.product__subtitle {
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63D1BB;
+
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.product__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #444444;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.product-info {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+
+  display: block;
+  margin-bottom: 28px;
+}
+
+.product-info tbody {
+  display: block;
+}
+
+.product-info__row {
+  display: block;
+  box-sizing: border-box;
+  height: 40px;
+  border: 0;
+  border-bottom: 1px solid #ECECEC;
+
+  padding: 0;
+  margin: 0;
+  margin-left: -3px;
+}
+
+.product-info__row td {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.product-info__column {
+  vertical-align: middle;
+  width: 97px;
+  height: 33px;
+}
+
+.product__image {
+  margin-bottom: 22px;
+}
+
+.product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #444444;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 23.5px;
+}
+

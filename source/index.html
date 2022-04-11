@@ -10,31 +10,33 @@
 <body class="page">
   <header class="page__heder header">
     <div class="header__logo logo">
-      <img class="logo__image">
+      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
     </div>
     <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="header__link" href="">Каталог товаров</a>
+          <a class="menu__link" href="">Каталог товаров</a>
         </li>
         <li class="menu__item">
-          <a class="header__link" href="">Вязание на заказ</a>
+          <a class="menu__link" href="">Вязание на заказ</a>
         </li>
         <li class="menu__item menu__item--search">
-          <a class="header__link" href="">Поиск по сайту</a>
+          <a class="menu__link" href="">Поиск по сайту</a>
         </li>
         <li class="menu__item menu__item--cart">
-          <a class="header__link" href="">Корзина: пока пуста</a>
+          <a class="menu__link" href="">Корзина: пока пуста</a>
         </li>
       </ul>
-      <button class="header__button"></button>
     </nav>
+    <button class="header__button header__button--menu-opened"></button>
   </header>
   <main class="page__content content">
     <h1 class="visually-hidden">Мишка</h1>
 
     <section class="promo">
-      <h2 class="promo__title">Милые штучки ручной работы для дома</h2>
+      <div class="promo__title-wrapper">
+        <h2 class="promo__title">Милые штуки<br> ручной <br> работы для дома</h2>
+      </div>
       <div class="promo__block promo-block promo-block--light">
         <p class="promo-block__name">Предметы интерьера</p>
       </div>
@@ -45,22 +47,23 @@
     <section class="product">
       <h2 class="product__title">Вязаные корзинки</h2>
       <h3 class="product__subtitle">ТОВАР НЕДЕЛИ</h3>
-      <p class="product__desc"></p>
+      <p class="product__desc">Экологически чистая пряжа,
+        ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       <table class="product__info product-info">
         <tr class="product-info__row">
-          <td>Цвет</td>
+          <td class="product-info__column">Цвет:</td>
           <td>«Тиффани»/серый</td>
         </tr>
         <tr class="product-info__row">
-          <td>Диаметр</td>
+          <td class="product-info__column">Диаметр:</td>
           <td>25 см</td>
         </tr>
         <tr class="product-info__row">
-          <td>Высота</td>
+          <td class="product-info__column">Высота:</td>
           <td>15 см</td>
         </tr>
       </table>
-      <img class="product__image">
+      <img class="product__image" src="img/triple-set-mobile 1.jpg" width="260px" height="315px" alt="Три вязанных корзинки">
       <p class="product__price">Цена: 990 руб.</p>
       <button class="product__button button">ЗАКАЗАТЬ</button>
     </section>
@@ -68,28 +71,40 @@
       <h2 class="features__title">Коротко о нас:</h2>
       <ul class="features__list">
         <li class="features__item feature feature--one">
-          <img class="feature__icon">
-          <p class="feature__desc">Экологически чистые материалы</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-1.svg" width="33" height="38" alt="">
+          </div>
+          <p class="feature__desc">Экологически <br> чистые материалы</p>
         </li>
         <li class="features__item feature feature--two">
-          <img class="feature__icon">
-          <p class="feature__desc">Скандинавский стиль по российской цене</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-3.svg" width="47" height="27" alt="">
+          </div>
+          <p class="feature__desc">Скандинавский стиль<br> по российской цене</p>
         </li>
         <li class="features__item feature feature--three">
-          <img class="feature__icon">
-          <p class="feature__desc">Увеличивает лайки на фотографиях</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-5.svg" width="34" height="27" alt="">
+          </div>
+          <p class="feature__desc">Увеличивает лайки<br> на фотографиях</p>
         </li>
         <li class="features__item feature feature--four">
-          <img class="feature__icon">
-          <p class="feature__desc">Связано вручную с любовью и умилением</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-2.svg" width="35" height="34" alt="">
+          </div>
+          <p class="feature__desc">Связано вручную<br> с любовью и умилением</p>
         </li>
         <li class="features__item feature feature--five">
-          <img class="feature__icon">
-          <p class="feature__desc">Поддержка отечественного производителя</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-4.svg" width="55" height="23" alt="">
+          </div>
+          <p class="feature__desc">Поддержка отечественного<br> производителя</p>
         </li>
         <li class="features__item feature feature--six">
-          <img class="feature__icon">
-          <p class="feature__desc">Поставляется в подарочной упаковке</p>
+          <div class="feature__icon-wrapper">
+            <img class="feature__icon" src="img/icon-6.svg" width="33" height="32" alt="">
+          </div>
+          <p class="feature__desc">Поставляется<br> в подарочной упаковке</p>
         </li>
       </ul>
     </section>
@@ -98,12 +113,18 @@
       <div class="reviews__slider slider">
         <article class="reviews__item review">
           <p class="review__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-            инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-            стильными, а также набирают больше лайков!
+            Я молодая мама, но всё равно <br>
+            фотографии не набирали и близко <br>
+            такого количества лайков, как <br>
+            у популярных инстамамочек.<br>
+            В отчаянии, я накупила<br>
+            аксессуаров и игрушек в Мишке,<br>
+            и мои фотографии сразу стали<br>
+            более стильными, а также<br>
+            набирают больше лайков!
           </p>
-          <span class="review__author">Анастасия Красильникова</span>
-          <span class="review__instagram">@misssssiskras</span>
+          <p class="review__author">Анастасия Красильникова</p>
+          <p class="review__instagram">@misssssiskras</p>
         </article>
         <div class="slider__controls">
           <button class="slider__button slider__button--backward">
@@ -113,29 +134,34 @@
             <span class="visually-hidden">Вперёд</span>
           </button>
         </div>
-        <button class="reviews__button">Написать</button>
       </div>
+      <button class="reviews__button button">Написать</button>
     </section>
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__item">
-        <div class="contacts__desc">
-          <label class="contacts__label" for="email">e-mail:</label>
+      <div class="contacts__info">
+        <div class="contacts__item">
+          <span class="contacts__desc">
+            e-mail:
+          </span>
+          <div class="contacts__mail">
+            <span class="contacts__mail-text">
+              info@mimimishkashop.ru
+            </span>
+          </div>
         </div>
-        <div class="contacts__info">
-          <input class="contacts__input" id="email" type="mail" name="mail">
-        </div>
-      </div>
-      <div class="contacts__item">
-        <div class="contacts__desc">
-          адрес:
-        </div>
-        <div class="contacts__info">
-          info@mimimishkashop.ru г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101
+        <div class="contacts__item">
+          <span class="contacts__desc">
+            адрес:
+          </span>
+          <span class="contacts__address">
+            г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101
+          </span>
         </div>
       </div>
       <div class="contacts__map"></div>
       <button class="contacts__button button">Напишите нам</button>
+
     </section>
     <footer class="page__footer footer">
       <div class="footer__logo logo">
@@ -147,8 +173,8 @@
         <li class="socials__item socials__item--twitter"></li>
       </ul>
       <div class="footer__creator creator">
-        <p class="crator__desc">Разработано</p>
-        <div class="crator__logo"></div>
+        <p class="creator__desc">Разработано</p>
+        <img class="creator__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
       </div>
     </footer>
   </main>

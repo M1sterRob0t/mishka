@@ -1,19 +1,35 @@
-$color: #ff6347;
+@import "blocks/header.scss";
+@import "blocks/menu.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/promo.scss";
+@import "blocks/product.scss";
+@import "blocks/features.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensans.woff") format("woff"),
+		url("../fonts/opensans.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/opensansbold.woff") format("woff"),
+		url("../fonts/opensansbold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
 
 body {
-  background-color: $color;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
+  width: 320px;
+  background-color: #000000;
+  margin: 0 auto;
 
-.content {
-  background: linear-gradient(white 0%, #008000 50%, #000000 100%);
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  font-family: "Open Sans";
 }
