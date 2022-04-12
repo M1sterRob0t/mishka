@@ -1,0 +1,52 @@
+.input {
+  display: block;
+  height: 52px;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  border: none;
+  background-color: #FFFFFF;
+  box-shadow: inset 0px -2px 0px #000000;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+
+  &::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  &--phone {
+    padding-bottom: 8px;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: right 7px top 12px;
+  }
+
+  &--mail {
+    padding-bottom: 8px;
+    background-image: url("../../img/mail.svg");
+    background-repeat: no-repeat;
+    background-position: right 2px center;
+  }
+
+  &--textarea {
+    background: #FFFFFF;
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    min-height: 142px;
+    padding: 17px;
+  }
+}
