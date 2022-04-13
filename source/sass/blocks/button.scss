@@ -1,0 +1,28 @@
+.button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 52px;
+
+  background: #FFFFFF;
+  border: 2px solid #444444;
+
+  cursor: pointer;
+
+  &--form {
+    font-size: 17px;
+    line-height: 16px;
+  }
+
+  &--catalog {
+    font-size: 18px;
+    line-height: 16px;
+  }
+}

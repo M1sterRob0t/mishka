@@ -1,0 +1,55 @@
+.features {
+  font-family: 'Open Sans';
+  font-style: normal;
+
+  background-color: #ffffff;
+  padding: 0 30px;
+  padding-top: 33.5px;
+  padding-bottom: 15px;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.feature__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 39px;
+
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.feature__icon {
+
+}
+
+.feature__desc {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  margin: 0;
+
+}
