@@ -1,3 +1,12 @@
+.content {
+  background-color: #FFFFFF;
+}
+
+.content--catalog {
+  /* padding: 0 30px; */
+  padding-bottom: 57px;
+}
+
 .content__title-wrapper {
   background-color: #F1F1F1;
   padding: 73.5px 30px;
@@ -13,4 +22,12 @@
   text-align: center;
 
   margin: 0;
+}
+
+.content__products {
+  margin: 30px;
+}
+
+.content__creation {
+  margin: 0 30px;
 }

@@ -17,8 +17,12 @@
   cursor: pointer;
 
   &--form {
-    font-weight: 700;
     font-size: 17px;
+    line-height: 16px;
+  }
+
+  &--catalog {
+    font-size: 18px;
     line-height: 16px;
   }
 }

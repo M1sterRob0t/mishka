@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="utf-8">
   <title>Мишка</title>
 </head>
@@ -9,66 +10,90 @@
 <body class="page">
   <header class="page__heder header">
     <div class="header__logo logo">
-      <img class="logo__image">
+      <a class="logo__link" href="index.html">
+        <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+      </a>
     </div>
     <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a class="header__link" href="">Каталог товаров</a>
+          <a class="menu__link" href="">Каталог товаров</a>
         </li>
         <li class="menu__item">
-          <a class="header__link" href="">Вязание на заказ</a>
+          <a class="menu__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="menu__item menu__item--search">
-          <a class="header__link" href="">Поиск по сайту</a>
+          <a class="menu__link" href="">Поиск по сайту</a>
         </li>
         <li class="menu__item menu__item--cart">
-          <a class="header__link" href="">Корзина: пока пуста</a>
+          <a class="menu__link" href="">Корзина: пока пуста</a>
         </li>
       </ul>
-      <button class="header__button"></button>
     </nav>
+    <button class="header__button header__button--menu-opened"></button>
   </header>
-  <main class="page__content content">
+  <main class="page__content content content--catalog">
     <div class="content__title-wrapper">
       <h1 class="content__title">Каталог товаров</h1>
     </div>
-    <section class="products">
+    <section class="content__products products">
       <ul class="products__list">
         <li class="products__item product">
-          <img class="product__image">
+          <img class="product__image" src="img/catalog/photo-1-mobile 1.jpg" width="260" height="195"
+            alt="Фотография вязанного зайчика в синей одежде">
           <div class="product__desc">
-            <p class="product__name">Зайчик-попрыгайчик</p>
+            <p class="product__name product__name--toy">Зайчик-попрыгайчик</p>
             <p class="product__info">Рост 30 см, вес 200 г</p>
+            <p class="product__price">1 200 руб.</p>
           </div>
-          <p class="product__price">690 руб.</p>
         </li>
         <li class="products__item product">
-          <img class="product__image">
+          <img class="product__image" src="img/catalog/photo-2-mobile 1.jpg" width="260" height="195"
+            alt="Фотография красно-белой вязанной корзинки с бельём">
           <div class="product__desc">
-            <p class="product__name">Корзинка для белья</p>
+            <p class="product__name product__name--basket">Корзинка для белья</p>
             <p class="product__info">Диаметр 15 см, высота 10 см</p>
+            <p class="product__price">690 руб.</p>
           </div>
-          <p class="product__price">690 руб.</p>
         </li>
         <li class="products__item product">
-          <img class="product__image">
+          <img class="product__image product__image--toy-cart" src="img/catalog/photo-3-mobile 1.jpg" width="260"
+            height="195" alt="Фотография большой бело-зелёной корзинки с плюшевыми игрушками">
           <div class="product__desc">
-            <p class="product__name">Большая корзинкадля игрушек</p>
+            <p class="product__name product__name--big-basket">Большая корзинка для игрушек</p>
             <p class="product__info">Диаметр 30 см, высота 30 см</p>
+            <p class="product__price">1 500 руб.</p>
           </div>
-          <p class="product__price">1 500 руб.</p>
         </li>
       </ul>
     </section>
-    <section class="creation">
-      <h2 class="creation__title">Процесспроизводства</h2>
-      <div class="creation__video-wrapper">
-        <img class="creation__video">
+    <section class="content__creation creation">
+      <div class="creation__title-wrapper">
+        <h2 class="creation__title">Процесс производства</h2>
       </div>
-      <p class="creation__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="creation__button button">Сделать заказ</button>
+      <div class="creation__video">
+      </div>
+      <div class="creation__desc-wrapper">
+        <p class="creation__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+          появляются наши товары.</p>
+        <button class="creation__button button button--catalog">Сделать заказ</button>
+      </div>
     </section>
   </main>
+  <footer class="page__footer footer">
+    <div class="footer__logo logo">
+      <img class="logo__image">
+    </div>
+    <ul class="footer__socials socials">
+      <li class="socials__item socials__item--instagram"></li>
+      <li class="socials__item socials__item--facebook"></li>
+      <li class="socials__item socials__item--twitter"></li>
+    </ul>
+    <div class="footer__creator creator">
+      <p class="creator__desc">Разработано</p>
+      <img class="creator__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+    </div>
+  </footer>
 </body>
+
 </html>
