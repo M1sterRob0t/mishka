@@ -1,5 +1,6 @@
-@import "blocks/header.scss";
+@import "blocks/variables.scss";
 @import "blocks/menu.scss";
+@import "blocks/header.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/button.scss";
 @import "blocks/promo.scss";
@@ -33,10 +34,24 @@
 	font-style: normal;
 }
 
+html {
+  background-color: #000000;
+}
+
 body {
   width: 320px;
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 0 auto;
 
   font-family: "Open Sans";
+}
+
+@media (min-width:$tablet-width) {
+  body {
+    width: $tablet-width;
+  }
+
+  .page__content {
+    margin-top: -66px;
+  }
 }
