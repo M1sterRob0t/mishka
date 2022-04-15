@@ -31,3 +31,33 @@
 .content__creation {
   margin: 0 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .content__title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 88px;
+
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  .content__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .content__products {
+    margin: 0 50px;
+    margin-top: 67px;
+    margin-bottom: 50px;
+  }
+
+  .content__creation {
+    margin: 0 50px;
+  }
+
+  .content--catalog {
+    padding-bottom: 65px;
+  }
+}
