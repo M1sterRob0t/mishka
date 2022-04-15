@@ -6,7 +6,7 @@
   width: 100%;
 
   border: none;
-  background-color: #FFFFFF;
+  background-color: transparent;
   box-shadow: inset 0px -2px 0px #000000;
 
   font-family: 'Open Sans';
@@ -26,7 +26,7 @@
     opacity: 0.3;
   }
 
-  &--phone {
+  &--tel {
     padding-bottom: 8px;
     background-image: url("../../img/phone.svg");
     background-repeat: no-repeat;
@@ -49,4 +49,26 @@
     min-height: 142px;
     padding: 17px;
   }
+
+
+}
+
+@media (min-width: $tablet-width) {
+  .input {
+    padding-left: 16px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
+
+    &--tel {
+      background-position: right 26px top 12px;
+    }
+    &--mail {
+      background-position: right 24px center;
+    }
+  }
+
 }
