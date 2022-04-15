@@ -23,8 +23,10 @@
   margin: 0;
   padding: 0;
 
-  &:not(:last-of-type) {
-    margin-bottom: 33px;
+  margin-bottom: 33px;
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -34,6 +36,7 @@
   line-height: 16px;
   color: #63D1BB;
   white-space: nowrap;
+  text-transform: uppercase;
   border: none;
 
   display: flex;
@@ -99,7 +102,7 @@
   margin-bottom: 23px;
 }
 
-.form__input:not(:last-child) {
+.form__input-wrapper:not(:last-child) {
   margin-bottom: 22px;
 }
 
@@ -115,4 +118,124 @@
 
   margin: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 0;
+    padding-top: 55px;
+    padding-bottom: 51px;
+  }
+
+  .form__desc {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 0 50px;
+
+    margin-bottom: 13px;
+  }
+
+  .form__item {
+    position: relative;
+
+    padding: 50px;
+    padding-left: 168px + 50px;
+
+    margin: 0;
+
+    &--gray {
+      background-color: rgba(241, 241, 241, 1);
+    }
+  }
+
+  .form__name {
+    position: absolute;
+    left: 50px;
+    top: 68px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__label {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  .form__radio:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  .form__radio:last-child {
+    margin-bottom: 0px;
+  }
+
+  .form__item--checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+
+    padding-bottom: 29px;
+  }
+
+  .form__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .form__label--input {
+    margin-right: 25px;
+  }
+
+  .form__item--tel {
+    padding-bottom: 0;
+  }
+
+  .form__item--email {
+    padding-top: 24px;
+  }
+
+  .form__name--mail {
+    top: 43px;
+  }
+
+  .form__item--comment {
+    padding-bottom: 53px;
+  }
+
+  .form__textarea {
+    margin: 0;
+  }
+
+  .form__button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 50px;
+  }
+
+  .form__footnote {
+    order: 2;
+    font-size: 17px;
+    line-height: 30px;
+
+    margin: 0;
+  }
+
+  .form__button {
+    order: 1;
+    width: 230px;
+
+    padding: 0;
+  }
+
+
+
 }

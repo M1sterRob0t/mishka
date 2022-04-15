@@ -9,15 +9,17 @@
 
 <body class="page">
   <header class="page__heder header">
-    <div class="header__logo logo">
-      <img class="logo__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
-    </div>
     <nav class="header__menu menu">
       <ul class="menu__list">
-        <li class="menu__item">
+        <li class="menu__item menu__item--logo">
+          <a class="menu__link menu__link--logo" href="index.html">
+            <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+          </a>
+        </li>
+        <li class="menu__item menu__item--catalog">
           <a class="menu__link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--form">
           <a class="menu__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="menu__item menu__item--search">
@@ -25,6 +27,15 @@
         </li>
         <li class="menu__item menu__item--cart">
           <a class="menu__link" href="">Корзина: пока пуста</a>
+        </li>
+        <li class="menu__item menu__item--delivery menu__item--hidden">
+          <a class="menu__link" href="">Бесплатная доставка по России</a>
+        </li>
+        <li class="menu__item  menu__item--hidden">
+          <a class="menu__link" href="">Новые поступления</a>
+        </li>
+        <li class="menu__item menu__item--hidden">
+          <a class="menu__link" href="">Распродажа</a>
         </li>
       </ul>
     </nav>
@@ -44,63 +55,69 @@
         <p class="promo-block__name">Детские игрушки</p>
       </div>
     </section>
+
     <section class="main-product">
-      <h2 class="main-product__title">Вязаные корзинки</h2>
-      <h3 class="main-product__subtitle">ТОВАР НЕДЕЛИ</h3>
-      <p class="main-product__desc">Экологически чистая пряжа,
-        ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-      <table class="main-product__info main-product-info">
-        <tr class="main-product-info__row">
-          <td class="main-product-info__column">Цвет:</td>
-          <td>«Тиффани»/серый</td>
-        </tr>
-        <tr class="main-product-info__row">
-          <td class="main-product-info__column">Диаметр:</td>
-          <td>25 см</td>
-        </tr>
-        <tr class="main-product-info__row">
-          <td class="main-product-info__column">Высота:</td>
-          <td>15 см</td>
-        </tr>
-      </table>
-      <img class="main-product__image" src="img/triple-set-mobile 1.jpg" width="260px" height="315px" alt="Три вязанных корзинки">
-      <p class="main-product__price">Цена: 990 руб.</p>
-      <button class="main-product__button button">ЗАКАЗАТЬ</button>
+      <div class="main-product__title-wrapper">
+        <h2 class="main-product__title">Вязаные корзинки</h2>
+        <h3 class="main-product__subtitle">ТОВАР НЕДЕЛИ</h3>
+      </div>
+      <div class="main-product__content-wrapper">
+        <p class="main-product__desc">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="main-product__info main-product-info">
+          <tr class="main-product-info__row">
+            <td class="main-product-info__column">Цвет:</td>
+            <td>«Тиффани»/серый</td>
+          </tr>
+          <tr class="main-product-info__row">
+            <td class="main-product-info__column">Диаметр:</td>
+            <td>25 см</td>
+          </tr>
+          <tr class="main-product-info__row">
+            <td class="main-product-info__column">Высота:</td>
+            <td>15 см</td>
+          </tr>
+        </table>
+        <img class="main-product__image" src="img/triple-set-mobile 1.jpg" width="260px" height="315px" alt="Три вязанных корзинки">
+        <p class="main-product__price">Цена: 990 руб.</p>
+        <button class="main-product__button button">ЗАКАЗАТЬ</button>
+      </div>
     </section>
+
     <section class="features">
       <h2 class="features__title">Коротко о нас:</h2>
       <ul class="features__list">
-        <li class="features__item feature feature--one">
+        <li class="features__item feature features__item--one">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-1.svg" width="33" height="38" alt="">
           </div>
           <p class="feature__desc">Экологически <br> чистые материалы</p>
         </li>
-        <li class="features__item feature feature--two">
+        <li class="features__item feature features__item--two">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-3.svg" width="47" height="27" alt="">
           </div>
           <p class="feature__desc">Скандинавский стиль<br> по российской цене</p>
         </li>
-        <li class="features__item feature feature--three">
+        <li class="features__item feature features__item--three">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-5.svg" width="34" height="27" alt="">
           </div>
           <p class="feature__desc">Увеличивает лайки<br> на фотографиях</p>
         </li>
-        <li class="features__item feature feature--four">
+        <li class="features__item feature features__item--four">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-2.svg" width="35" height="34" alt="">
           </div>
           <p class="feature__desc">Связано вручную<br> с любовью и умилением</p>
         </li>
-        <li class="features__item feature feature--five">
+        <li class="features__item feature features__item--five">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-4.svg" width="55" height="23" alt="">
           </div>
           <p class="feature__desc">Поддержка отечественного<br> производителя</p>
         </li>
-        <li class="features__item feature feature--six">
+        <li class="features__item feature features__item--six">
           <div class="feature__icon-wrapper">
             <img class="feature__icon" src="img/icon-6.svg" width="33" height="32" alt="">
           </div>
@@ -108,6 +125,7 @@
         </li>
       </ul>
     </section>
+
     <section class="page__reviews reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider slider">
@@ -137,6 +155,7 @@
       </div>
       <button class="reviews__button button">Написать</button>
     </section>
+
     <section class="contacts">
       <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__info">
@@ -166,7 +185,7 @@
   </main>
   <footer class="page__footer footer">
     <div class="footer__logo logo">
-      <img class="logo__image">
+      <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишка'">
     </div>
     <ul class="footer__socials socials">
       <li class="socials__item socials__item--instagram"></li>
