@@ -107,3 +107,26 @@
     line-height: 22px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    margin: 0 50px;
+    padding: 0 175px;
+    padding-top: 72px;
+    padding-bottom: 32px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features__item {
+    margin-right: 50px;
+  }
+}
