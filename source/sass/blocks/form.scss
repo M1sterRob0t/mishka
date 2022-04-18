@@ -236,3 +236,53 @@
     padding: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-top: 98px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+
+  .form__desc {
+    padding: 0 225px;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .form__item {
+    padding-top: 50px;
+    padding-left: 225px;
+    padding-right: 225px;
+
+    /* padding: 0 225px; */
+  }
+
+  .form__name {
+    left: 111px;
+  }
+
+  .form__item--checkbox {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+  }
+
+  .form__item--fio {
+    padding-top: 48px;
+  }
+
+  .form__item--email {
+    padding-top: 25px;
+  }
+
+  .form__item--comment {
+    padding-bottom: 48px;
+  }
+
+  .form__button-container {
+    margin: 0;
+    padding: 0 225px;
+  }
+}
