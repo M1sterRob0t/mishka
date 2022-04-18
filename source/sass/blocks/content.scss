@@ -61,3 +61,30 @@
     padding-bottom: 65px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .content__title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 116px;
+
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .content__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .content__products {
+    margin-top: 110px;
+    margin-bottom: 55px;
+  }
+
+  .content__creation {
+    margin: 0 50px;
+    margin-bottom: 38px;
+  }
+}

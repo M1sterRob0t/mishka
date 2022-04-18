@@ -10,9 +10,9 @@
 
 <body class="page">
   <header class="page__heder header">
-    <nav class="header__menu menu">
+    <nav class="header__menu menu menu--closed">
       <ul class="menu__list">
-        <li class="menu__item menu__item--logo">
+        <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
             <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
           </a>
@@ -29,18 +29,18 @@
         <li class="menu__item menu__item--cart">
           <a class="menu__link" href="">Корзина: пока пуста</a>
         </li>
-        <li class="menu__item menu__item--delivery menu__item--hidden">
+        <li class="menu__item menu__item--delivery menu__item--tablet">
           <a class="menu__link" href="">Бесплатная доставка по России</a>
         </li>
-        <li class="menu__item  menu__item--hidden">
+        <li class="menu__item  menu__item--new menu__item--desktop">
           <a class="menu__link" href="">Новые поступления</a>
         </li>
-        <li class="menu__item menu__item--hidden">
+        <li class="menu__item menu__item--sale menu__item--desktop">
           <a class="menu__link" href="">Распродажа</a>
         </li>
       </ul>
     </nav>
-    <button class="header__button header__button--menu-opened"></button>
+    <button class="header__button header__button--menu-closed"></button>
   </header>
   <main class="page__content content content--catalog">
     <div class="content__title-wrapper">
