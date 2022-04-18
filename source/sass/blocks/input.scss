@@ -72,3 +72,16 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .input {
+
+    &--tel {
+      background-position: right 8px top 12px;
+    }
+    &--mail {
+      background-position: right 4px center;
+    }
+  }
+
+}

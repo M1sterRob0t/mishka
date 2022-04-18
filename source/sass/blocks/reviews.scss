@@ -151,3 +151,42 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin: 0 50px;
+    padding-left: 175px;
+    padding-top: 80px;
+    padding-bottom: 144px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-bottom: 32px;
+  }
+
+  .review__text {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-right: 20px;
+    margin-bottom: 45px;
+  }
+
+  .review__author {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .reviews__button {
+    right: 0;
+  }
+
+  .slider__controls {
+    right: -30px;
+  }
+
+}

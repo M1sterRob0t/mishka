@@ -6,7 +6,6 @@
   padding-top: 22px;
 }
 
-
 .creation__title {
   display: flex;
   justify-content: center;
@@ -42,13 +41,13 @@
 
 .creation__video {
   position: relative;
-  width: 260px;
+  box-sizing: border-box;
+  width: 100%;
   height: 150px;
   background-image: url("../../img/catalog/video-mobile 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
-  margin-left: -1px;
   margin-bottom: 35px;
 }
 
@@ -101,7 +100,8 @@
   .creation__video {
     order: 1;
 
-    width: 668px;
+    box-sizing: border-box;
+    width: 100%;
     height: 455px;
 
     background-image: url("../../img/catalog/video-tablet\ 1.jpg");
@@ -149,4 +149,63 @@
 
     margin-bottom: 45px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .creation{
+    display: grid;
+    grid-template-areas:
+    "video title"
+    "video desc";
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 25px;
+  }
+
+  .creation__video {
+    grid-area: video;
+    height: 453px;
+    background-image: url("../../img/catalog/video-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+
+    margin: 0;
+  }
+
+  .creation__title-wrapper {
+    display: block;
+
+    padding: 0 55px;
+    margin: 0;
+    margin-top: 47px;
+  }
+
+  .creation__title {
+    grid-area: title;
+    display: block;
+
+    margin: 0;
+    margin-bottom: 10px;
+
+    &::before {
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+
+  .creation__desc-wrapper {
+    grid-area: desc;
+
+    padding: 0 55px;
+    margin: 0;
+  }
+
+  .creation__desc {
+    margin-bottom: 50px;
+  }
+
+  .creation__button {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
 }

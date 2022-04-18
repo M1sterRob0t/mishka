@@ -8,7 +8,9 @@
 
 .promo__title-wrapper {
   padding: 0 30px;
-  padding-top: 74px;
+
+  margin-top: 74px;
+  margin-bottom: 120px;
 }
 
 .promo__title {
@@ -19,7 +21,6 @@
   text-align: center;
 
   margin: 0;
-  margin-bottom: 120px;
 }
 
 .promo-block {
@@ -75,6 +76,10 @@
     }
   }
 
+  .promo__title-wrapper {
+    margin-bottom: 372px;
+  }
+
   .promo__title {
     flex-grow: 1;
     font-weight: 700;
@@ -82,7 +87,6 @@
     line-height: 50px;
 
     margin-left: -5px;
-    margin-bottom: 372px;
   }
 
   .promo__title br {
@@ -104,5 +108,35 @@
     &--dark {
       background-position: right 32px top 32px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    background-image: url("../../img/hero-desktop\ 1.jpg") ;
+    background-position: top 0px center;
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+
+    &::after {
+      left: -50px;
+      min-width: 1250px;
+      background-size: cover;
+    }
+  }
+
+  .promo__title-wrapper {
+    padding: 0 175px;
+
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 354px;
+  }
+
+  .promo__title {
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
