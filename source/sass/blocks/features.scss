@@ -4,7 +4,7 @@
 
   background-color: #ffffff;
   padding: 0 30px;
-  padding-top: 33.5px;
+  padding-top: 32px;
   padding-bottom: 15px;
 }
 
@@ -113,7 +113,7 @@
     margin: 0 50px;
     padding: 0 175px;
     padding-top: 72px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
   }
 
   .features__title {
@@ -128,5 +128,9 @@
 
   .features__item {
     margin-right: 50px;
+  }
+
+  .feature__icon-wrapper {
+    margin-bottom: 18px;
   }
 }

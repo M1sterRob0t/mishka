@@ -70,8 +70,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 50px;
-    padding-top: 72px;
-    padding-bottom: 57px;
+    padding-top: 70px;
+    padding-bottom: 56px;
   }
 
   .contacts__title {
@@ -89,7 +89,7 @@
       background-image: url("../../img/Vector.svg");
 
       position: absolute;
-      right: 0;
+      right: 5px;
       bottom: -8px;
     }
   }
@@ -115,12 +115,13 @@
 
   .contacts__map {
     width: 768px;
+    height: 457px;
     background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: top 140px left 360px, center;
 
     margin-left: -50px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-tablet@2x.png");
@@ -141,7 +142,7 @@
 
     margin: 0 50px;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 74px;
     padding-left: 175px;
     padding-bottom: 105px;
 
@@ -158,7 +159,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    margin-top: 80px;
+    margin-top: 78px;
     margin-bottom: 35px;
 
     &::after {
