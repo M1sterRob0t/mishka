@@ -10,11 +10,15 @@
 
 <body class="page">
   <header class="page__heder header">
-    <nav class="header__menu menu menu--closed">
+    <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
-            <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+            <picture>
+              <source srcset="img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+              <source srcset="img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+              <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+            </picture>
           </a>
         </li>
         <li class="menu__item menu__item--catalog">

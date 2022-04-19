@@ -44,6 +44,10 @@
   padding: 0;
 }
 
+.menu__image {
+  margin-top: 7px;
+}
+
 .menu__item--search {
   background-image: url("../../img/search.svg");
   background-repeat: no-repeat;
@@ -104,6 +108,12 @@
 
     & .menu__link {
       justify-content: flex-start;
+    }
+
+    & .menu__image {
+      margin-top: 10px;
+      width: 113px;
+      height: auto;
     }
   }
 
@@ -216,11 +226,19 @@
     grid-column: 3/5;
     padding: 0;
 
+
+
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-right: 1px solid rgba(0, 0, 0, 0.1);
 
     & .menu__link {
       justify-content: center;
+    }
+
+    & .menu__image {
+      margin-top: 10px;
+      width: 150px;
+      height: auto;
     }
   }
 
