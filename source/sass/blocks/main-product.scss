@@ -167,6 +167,11 @@
     height: 52px;
   }
 
+  .main-product__picture {
+    grid-area: image;
+    align-self: center;
+  }
+
   .main-product__image {
     grid-area: image;
     align-self: center;

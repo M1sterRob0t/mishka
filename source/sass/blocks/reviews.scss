@@ -91,11 +91,16 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding: 84px 50px 50px 50px;
-    background-image: url("../../img/zigzag-line-desktop.svg"), url("../../img/review.jpg");
+    background-image: url("../../img/zigzag-line-desktop.svg"), url("../../img/index/review.jpg");
     background-position: bottom, left top;
     background-size: contain, auto;
 
     padding-bottom: 90px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/zigzag-line-desktop.svg"), url("../../img/index/review@2x.jpg");
+      background-size: contain, 350px 457px;
+    }
   }
 
   .reviews__title {
