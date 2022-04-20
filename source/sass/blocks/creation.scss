@@ -57,6 +57,9 @@
 }
 
 .creation__video-button {
+  $button-width: 100.6px;
+  $button-height: 76.8px;
+
   position: absolute;
   left: 0;
   right: 0;
@@ -64,13 +67,31 @@
   top: 0;
   margin: auto;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100.6px;
   height: 76.8px;
   border: none;
   border-radius: 22px;
-  background-image: url("../../img/catalog/play.svg");
-  background-position: center;
   cursor: pointer;
+
+  &:hover .creation__video-icon{
+    width: $button-width * 1.2;
+    height: $button-height * 1.2;
+  }
+
+  &:active  .creation__video-icon{
+    width: $button-width * 0.8;
+    height: $button-height *0.8;
+  }
+
+  &:active {
+    width: $button-width * 0.8;
+    height: $button-height *0.8;
+    opacity: 0.5;
+  }
 }
 
 .creation__desc {
