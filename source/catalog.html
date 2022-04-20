@@ -113,6 +113,29 @@
       </div>
     </section>
   </main>
+  <section class="page__modal modal">
+    <h2 class="modal__title">Добавить<br> в корзину</h2>
+    <p class="modal__desc">Выбирите размер:</p>
+    <form class="modal__form">
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden" id="modal-input-1" type="radio" name="size" value="S" checked>
+        <label class="modal__label" for="modal-input-1">S</label>
+      </div>
+
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden"  id="modal-input-2" type="radio" name="size" value="M">
+        <label class="modal__label" for="modal-input-2">M</label>
+      </div>
+
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden"  id="modal-input-3" type="radio" name="size" value="L">
+        <label class="modal__label" for="modal-input-3">L</label>
+      </div>
+
+      <button class="modal__button" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="overlay"></div>
   <footer class="page__footer footer">
     <div class="footer__logo logo">
       <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишка'">

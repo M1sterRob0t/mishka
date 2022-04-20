@@ -16,6 +16,8 @@
 @import "blocks/input.scss";
 @import "blocks/products.scss";
 @import "blocks/creation.scss";
+@import "blocks/modal.scss";
+@import "blocks/overlay.scss";
 
 
 @font-face {
@@ -40,9 +42,9 @@ html {
 
 body {
   width: 320px;
-  background-color: #ffffff;
   margin: 0 auto;
 
+  background-color: #ffffff;
   font-family: "Open Sans";
 }
 

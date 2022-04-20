@@ -10,7 +10,7 @@
 
 <body class="page">
   <header class="page__heder header">
-    <nav class="header__menu menu menu--closed">
+    <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
@@ -86,9 +86,12 @@
           </tr>
         </table>
         <picture class="main-product__picture">
-          <source srcset="img/index/triple-set-desktop.jpg, img/index/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
-          <source srcset="img/index/triple-set-tablet.jpg, img/index/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="main-product__image" src="img/index/triple-set-mobile.jpg" srcset="img/index/triple-set-mobile@2x.jpg 2x" width="260px" height="315px" alt="Три вязанных корзинки">
+          <source srcset="img/index/triple-set-desktop.jpg, img/index/triple-set-desktop@2x.jpg 2x"
+            media="(min-width: 1150px)">
+          <source srcset="img/index/triple-set-tablet.jpg, img/index/triple-set-tablet@2x.jpg 2x"
+            media="(min-width: 768px)">
+          <img class="main-product__image" src="img/index/triple-set-mobile.jpg"
+            srcset="img/index/triple-set-mobile@2x.jpg 2x" width="260px" height="315px" alt="Три вязанных корзинки">
         </picture>
         <p class="main-product__price">Цена: 990 руб.</p>
         <button class="main-product__button button">ЗАКАЗАТЬ</button>
@@ -193,6 +196,29 @@
       <button class="contacts__button button">Напишите нам</button>
     </section>
   </main>
+  <section class="page__modal modal">
+    <h2 class="modal__title">Добавить<br> в корзину</h2>
+    <p class="modal__desc">Выбирите размер:</p>
+    <form class="modal__form">
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden" id="modal-input-1" type="radio" name="size" value="S" checked>
+        <label class="modal__label" for="modal-input-1">S</label>
+      </div>
+
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden"  id="modal-input-2" type="radio" name="size" value="M">
+        <label class="modal__label" for="modal-input-2">M</label>
+      </div>
+
+      <div class="modal__form-item">
+        <input class="modal__input visually-hidden"  id="modal-input-3" type="radio" name="size" value="L">
+        <label class="modal__label" for="modal-input-3">L</label>
+      </div>
+
+      <button class="modal__button" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="overlay"></div>
   <footer class="page__footer footer">
     <div class="footer__logo logo">
       <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишка'">
