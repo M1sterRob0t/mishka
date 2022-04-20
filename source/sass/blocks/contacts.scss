@@ -51,11 +51,16 @@
   width: 320px;
   margin-left: -30px;
 
-  background-image: url("../../img/map-pin.svg"), url("../../img/map-mobile@1x\ 1.png");
+  background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: left 138px top 145px, center;
 
   margin-bottom: 41px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-mobile@2x.png");
+    background-size: auto, contain;
+  }
 }
 
 .contacts__button {
@@ -65,8 +70,8 @@
 @media (min-width: $tablet-width) {
   .contacts {
     padding: 50px;
-    padding-top: 72px;
-    padding-bottom: 57px;
+    padding-top: 70px;
+    padding-bottom: 56px;
   }
 
   .contacts__title {
@@ -84,7 +89,7 @@
       background-image: url("../../img/Vector.svg");
 
       position: absolute;
-      right: 0;
+      right: 5px;
       bottom: -8px;
     }
   }
@@ -110,12 +115,18 @@
 
   .contacts__map {
     width: 768px;
-    background-image: url("../../img/map-pin.svg"), url("../../img/map-tablet@1x.png");
+    height: 457px;
+    background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: top 140px left 360px, center;
 
     margin-left: -50px;
-    margin-bottom: 60px;
+    margin-bottom: 56px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-tablet@2x.png");
+      background-size: auto, contain;
+    }
   }
 
   .contacts__button {
@@ -131,7 +142,7 @@
 
     margin: 0 50px;
     padding: 0;
-    padding-top: 75px;
+    padding-top: 74px;
     padding-left: 175px;
     padding-bottom: 105px;
 
@@ -148,7 +159,7 @@
     font-size: 53px;
     line-height: 57px;
 
-    margin-top: 80px;
+    margin-top: 78px;
     margin-bottom: 35px;
 
     &::after {
@@ -193,9 +204,13 @@
     width: 100%;
     height: 457px;
 
-    background-image: url("../../img/map-pin.svg"), url("../../img/map-desktop@1x\ 1.png");
+    background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-desktop@1x.png");
     background-position: left 238px top 144px, center;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-desktop@2x.png");
+      background-size: auto, contain;
+    }
   }
 
 }

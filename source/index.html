@@ -14,7 +14,11 @@
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
-            <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+            <picture>
+              <source srcset="img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+              <source srcset="img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+              <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+            </picture>
           </a>
         </li>
         <li class="menu__item menu__item--catalog">
@@ -81,7 +85,11 @@
             <td>15 см</td>
           </tr>
         </table>
-        <img class="main-product__image" src="img/triple-set-mobile 1.jpg" width="260px" height="315px" alt="Три вязанных корзинки">
+        <picture class="main-product__picture">
+          <source srcset="img/index/triple-set-desktop.jpg, img/index/triple-set-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+          <source srcset="img/index/triple-set-tablet.jpg, img/index/triple-set-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="main-product__image" src="img/index/triple-set-mobile.jpg" srcset="img/index/triple-set-mobile@2x.jpg 2x" width="260px" height="315px" alt="Три вязанных корзинки">
+        </picture>
         <p class="main-product__price">Цена: 990 руб.</p>
         <button class="main-product__button button">ЗАКАЗАТЬ</button>
       </div>
@@ -183,7 +191,6 @@
       </div>
       <div class="contacts__map"></div>
       <button class="contacts__button button">Напишите нам</button>
-
     </section>
   </main>
   <footer class="page__footer footer">

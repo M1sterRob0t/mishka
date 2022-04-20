@@ -1,15 +1,13 @@
 .promo {
+  padding-top: 74px;
   background-color: #ffffff;
-  background-image: url("../../img/hero-mobile@2x\ 1.jpg");
-  /* background-repeat: no-repeat; */
+  background-image: url("../../img/index/hero-mobile@2x.jpg");
   background-position: top -15px center;
   z-index: 1;
 }
 
 .promo__title-wrapper {
   padding: 0 30px;
-
-  margin-top: 74px;
   margin-bottom: 120px;
 }
 
@@ -59,10 +57,10 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 80px 50px 13px 50px;
-    background-image: url("../../img/hero-desktop\ 3.jpg");
-    background-repeat: repeat;
-    background-position: top -2px left 15px;
+    padding: 156px 50px 12px 50px;
+    background-image: url("../../img/index/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: top -2px center;
 
     &::after {
       content: "";
@@ -74,10 +72,15 @@
       background-image: url("../../img/zigzag-fill-desktop.svg");
       background-repeat: repeat;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/hero-desktop@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .promo__title-wrapper {
-    margin-bottom: 372px;
+    margin-bottom: 371px;
   }
 
   .promo__title {
@@ -113,9 +116,10 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background-image: url("../../img/hero-desktop\ 1.jpg") ;
+    background-image: url("../../img/index/hero-desktop.jpg") ;
     background-position: top 0px center;
     background-repeat: no-repeat;
+    padding-top: 78px;
     padding-bottom: 5px;
     overflow-x: hidden;
 
@@ -124,6 +128,11 @@
       min-width: 1250px;
       background-size: cover;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/hero-desktop@2x.jpg");
+      background-size: contain;
+    }
   }
 
   .promo__title-wrapper {
@@ -131,7 +140,7 @@
 
     margin: 0 auto;
     margin-top: 80px;
-    margin-bottom: 354px;
+    margin-bottom: 355px;
   }
 
   .promo__title {
