@@ -22,28 +22,66 @@
 }
 
 .promo-block {
+  position: relative;
   height: 103px;
   background-color: #63D1BB;
-  background-image: url("../../img/interior.svg");
-  background-position: right 40px center;
-  background-repeat: no-repeat;
 
   color: #FFFFFF;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
+  text-decoration: none;
 
   display: flex;
   align-items: center;
 
+  box-sizing: border-box;
   padding: 0 30px;
+
+  &:hover {
+    background-color: #59D5BC;
+    box-shadow: 0 -5px 0 0px #59D5BC;
+    padding-bottom: 5px;
+  }
+
+  &:hover .promo-block__icon{
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: #59D5BC;
+  }
+
+  &:active .promo-block__icon{
+    opacity: 0.3;
+  }
 
   &--dark {
     background-color: #56C3B2;
-    background-image: url("../../img/toy.svg");
-    background-position: right 30px center;
   }
 
+  &--dark:hover {
+    background-color: #46C1AE;
+    box-shadow: 0 -5px 0 0px #46C1AE;
+  }
+
+  &--dark:active {
+    background-color: #46C1AE;
+  }
+
+}
+
+.promo-block__icon {
+  position: absolute;
+  opacity: 0.5;
+
+  &--interior {
+    right: 36px;
+  }
+
+  &--toy {
+    right: 27px;
+  }
 }
 
 .promo-block__name {
@@ -105,12 +143,10 @@
     line-height: 30px;
 
     padding-left: 37px;
+  }
 
-    background-position: right 37px center;
-
-    &--dark {
-      background-position: right 32px top 32px;
-    }
+  .promo-block__icon--toy {
+    right: 33px;
   }
 }
 
