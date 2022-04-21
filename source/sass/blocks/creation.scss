@@ -2,8 +2,13 @@
   font-family: 'Open Sans';
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
+  user-select: none;
 
   padding-top: 22px;
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .creation__title {

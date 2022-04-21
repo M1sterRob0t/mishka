@@ -195,17 +195,43 @@
     </section>
   </main>
   <footer class="page__footer footer">
-    <div class="footer__logo logo">
-      <img class="logo__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип 'Мишка'">
+    <div class="footer__logo">
+      <a class="footer__logo-link" href="index.html">
+        <svg class="footer__logo-image" width="102" height="34" alt="Логотип 'Мишка'">
+          <use xlink:href="sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
     </div>
     <ul class="footer__socials socials">
-      <li class="socials__item socials__item--instagram"></li>
-      <li class="socials__item socials__item--facebook"></li>
-      <li class="socials__item socials__item--twitter"></li>
+      <li class="socials__item socials__item--instagram">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="22" height="22" alt="Instagram">
+            <use xlink:href="sprite.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item socials__item--facebook">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="15" height="28" alt="Facebook">
+            <use xlink:href="sprite.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item socials__item--twitter">
+        <a class="socials__link" href="#">
+          <svg class="socials__icon" width="23" height="20" alt="Twitter">
+            <use xlink:href="sprite.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
     </ul>
-    <div class="footer__creator creator">
-      <p class="creator__desc">Разработано</p>
-      <img class="creator__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Академии">
+    <div class="footer__copyright copyright ">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <p class="copyright__desc">Разработано</p>
+        <svg class="copyright__logo" width="27" height="35" alt="Логотип HTML Академии">
+          <use xlink:href="sprite.svg#academy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>
