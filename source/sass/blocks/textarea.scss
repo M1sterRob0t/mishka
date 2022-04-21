@@ -1,0 +1,56 @@
+.textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 142px;
+  padding: 17px;
+
+  background: #FFFFFF;
+  border: 2px solid #444444;
+  box-sizing: border-box;
+  box-shadow: none;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 18px;
+  color: #444444;
+  z-index: 2;
+
+  &::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.3;
+  }
+
+
+  &:hover {
+    outline: none;
+    border: 2px solid #62D1BA;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #62D1BA;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    padding-left: 16px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
+}

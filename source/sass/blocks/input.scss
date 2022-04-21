@@ -1,5 +1,18 @@
 .input {
+  position: relative;
+
+  &--tel .input__body{
+    padding-bottom: 8px;
+  }
+
+  &--mail .input__body{
+    padding-bottom: 8px;
+  }
+}
+
+.input__body {
   display: block;
+  position: relative;
   height: 52px;
 
   box-sizing: border-box;
@@ -15,9 +28,10 @@
   font-size: 19px;
   line-height: 18px;
   color: #444444;
+  z-index: 2;
 
   &::placeholder {
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
@@ -26,35 +40,41 @@
     opacity: 0.3;
   }
 
-  &--tel {
-    padding-bottom: 8px;
-    background-image: url("../../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: right 7px top 12px;
+  &:hover {
+    box-shadow: inset 0px -2px 0px #62D1BA;
   }
 
-  &--mail {
-    padding-bottom: 8px;
-    background-image: url("../../img/mail.svg");
-    background-repeat: no-repeat;
-    background-position: right 2px center;
+  &:hover + .input__icon{
+    color: #62D1BA;
   }
 
-  &--textarea {
-    background: #FFFFFF;
-    border: 2px solid #444444;
-    box-sizing: border-box;
-    box-shadow: none;
-
-    min-height: 142px;
-    padding: 17px;
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px -2px 0px #62D1BA;
   }
 
+  &:focus + .input__icon{
+    color: #62D1BA;
+  }
+}
 
+.input__icon {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.input--tel .input__icon {
+  right: 8px;
+  bottom: 18px;
+}
+
+.input--mail .input__icon {
+  right: 4px;
+  bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
-  .input {
+  .input__body {
     padding-left: 16px;
 
     &::placeholder {
@@ -62,26 +82,27 @@
       font-size: 19px;
       line-height: 18px;
     }
-
-    &--tel {
-      background-position: right 26px top 12px;
-    }
-    &--mail {
-      background-position: right 24px center;
-    }
   }
 
+  .input--tel .input__icon {
+    right: 25px;
+    bottom: 18px;
+  }
+
+  .input--mail .input__icon {
+    right: 20px;
+    bottom: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .input {
-
-    &--tel {
-      background-position: right 8px top 12px;
-    }
-    &--mail {
-      background-position: right 4px center;
-    }
+  .input--tel .input__icon {
+    right: 8px;
+    bottom: 18px;
   }
 
+  .input--mail .input__icon {
+    right: 4px;
+    bottom: 16px;
+  }
 }

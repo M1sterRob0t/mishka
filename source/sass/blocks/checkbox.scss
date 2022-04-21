@@ -53,6 +53,14 @@
 
     display: none;
   }
+
+  &:hover::before {
+    border: 2px solid #62D1BA;
+  }
+
+  &:active::before {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
 }
 
 .checkbox__input:checked+.checkbox__label::after {
@@ -75,6 +83,7 @@
       width: 30px;
       height: 15px;
       top: 15px;
+      left: 14px;
     }
   }
 }
