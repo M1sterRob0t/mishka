@@ -70,17 +70,14 @@
   background-color: #FFFFFF;
   border: 1px solid #ECECEC;
 
-  background-repeat: no-repeat;
-  background-position: top 10px center;
-
   cursor: pointer;
 
-  &--backward {
-    background-image: url("../../img/huge-arrow-left.svg.svg");
+  &:hover .slider__button-icon{
+    opacity: 0.6;
   }
 
-  &--forward {
-    background-image: url("../../img/huge-arrow-right.svg.svg");
+  &:active .slider__button-icon{
+    opacity: 0.3;
   }
 }
 
@@ -133,8 +130,8 @@
 
   .slider__controls {
     position: absolute;
-    right: 20px;
-    bottom: 13px;
+    right: 26px;
+    bottom: 14px;
 
     width: 135px;
     justify-content: space-between;
@@ -187,12 +184,13 @@
     line-height: 24px;
   }
 
-  .reviews__button {
-    right: 0;
+  .slider__controls {
+    bottom: 17px;
+    right: -25px;
   }
 
-  .slider__controls {
-    right: -30px;
+  .reviews__button {
+    right: 0;
   }
 
 }

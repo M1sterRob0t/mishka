@@ -31,3 +31,13 @@
     line-height: 16px;
   }
 }
+
+.button:hover {
+  background: #444444;
+  border: 2px solid #444444;
+  color: #FFFFFF;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3)
+}

@@ -1,0 +1,135 @@
+.modal {
+  display: none;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  box-sizing: border-box;
+  width: 320px;
+  height: 336px;
+  margin: auto;
+
+  font-family: 'Open Sans';
+
+  padding: 0 30px;
+  padding-top: 27px;
+  background: #FFFFFF;
+  border: 1px solid #C6C6C6;
+  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+
+  &--shown {
+    display: block;
+  }
+}
+
+.modal__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.modal__desc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.modal__form-item {
+  margin-bottom: 31px;
+}
+
+.modal__label {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 82px;
+  height: 52px;
+
+  background: #FFFFFF;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3) ;
+  }
+}
+
+.modal__input:checked + .modal__label {
+  border: 2px solid #63D1BB;
+}
+
+
+.modal__button {
+  flex-grow: 1;
+  width: 260px;
+  height: 52px;
+  background: #63D1BB;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    padding-top: 34px;
+  }
+
+  .modal__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 57px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .modal__desc {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .modal__form {
+    padding-left: 108px - 30px;
+    padding-right: 108px - 30px;
+  }
+
+  .modal__label {
+    width: 112px;
+    height: 52px;
+  }
+
+}

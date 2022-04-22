@@ -10,12 +10,15 @@
 @import "blocks/contacts.scss";
 @import "blocks/footer.scss";
 @import "blocks/content.scss";
-@import "blocks/form.scss";
 @import "blocks/radio.scss";
 @import "blocks/checkbox.scss";
 @import "blocks/input.scss";
+@import "blocks/textarea.scss";
+@import "blocks/form.scss";
 @import "blocks/products.scss";
 @import "blocks/creation.scss";
+@import "blocks/modal.scss";
+@import "blocks/overlay.scss";
 
 
 @font-face {
@@ -40,9 +43,9 @@ html {
 
 body {
   width: 320px;
-  background-color: #ffffff;
   margin: 0 auto;
 
+  background-color: #ffffff;
   font-family: "Open Sans";
 }
 

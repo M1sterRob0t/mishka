@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
 
+  max-width: 100%;
   margin-bottom: 33px;
 
   &:last-of-type {
@@ -84,6 +85,7 @@
 }
 
 .form__label {
+  position: relative;
   display: block;
   font-weight: 700;
   font-size: 17px;
@@ -107,7 +109,8 @@
 }
 
 .form__textarea {
-  margin-bottom: 16px;
+  max-width: 250px;
+  margin-bottom: 12px;
 }
 
 .form__footnote {
@@ -124,7 +127,7 @@
   .form {
     padding: 0;
     padding-top: 55px;
-    padding-bottom: 51px;
+    padding-bottom: 49px;
   }
 
   .form__desc {
@@ -152,6 +155,8 @@
     position: absolute;
     left: 50px;
     top: 68px;
+    z-index: 0;
+    display: inline;
 
     &::after {
       display: none;
@@ -161,6 +166,12 @@
   .form__label {
     font-size: 19px;
     line-height: 18px;
+
+    margin-right: 5px;
+  }
+
+  .form__input {
+    flex-grow: 1;
   }
 
   .form__radio:not(:last-child) {
@@ -206,10 +217,11 @@
   }
 
   .form__item--comment {
-    padding-bottom: 53px;
+    padding-bottom: 48px;
   }
 
   .form__textarea {
+    max-width: 500px;
     margin: 0;
   }
 
@@ -256,8 +268,6 @@
     padding-top: 50px;
     padding-left: 225px;
     padding-right: 225px;
-
-    /* padding: 0 225px; */
   }
 
   .form__name {
@@ -278,7 +288,11 @@
   }
 
   .form__item--comment {
-    padding-bottom: 48px;
+    padding-bottom: 44px;
+  }
+
+  .form__textarea {
+    max-width: 700px;
   }
 
   .form__button-container {
