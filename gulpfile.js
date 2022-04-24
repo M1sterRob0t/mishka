@@ -77,7 +77,7 @@ const createWebp = async () => {
 }
 export {createWebp};
 
-// svg sprite - отключен
+// svg sprite
 const createSprite = async () => {
   gulp.src('source/img/sprite/*.svg')
     .pipe(svgstore())
@@ -86,13 +86,14 @@ const createSprite = async () => {
 }
 export {createSprite};
 
-// htmlmin - отключен
+// htmlmin
 const minifyHTML = async () => {
   gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: false })) // откл
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
 }
 export {minifyHTML};
+
 
 // fonts
 const copyFonts = async () => {
