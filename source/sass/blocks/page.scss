@@ -1,0 +1,31 @@
+.page__modal {
+  display: none;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+
+  &--shown {
+    display: block;
+  }
+}
+
+.page__overlay {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+
+  background-color: #FFFFFF;
+  opacity: 0.9;
+
+  &--shown {
+    display: block;
+  }
+}

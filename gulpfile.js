@@ -52,8 +52,9 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", gulp.series(minifyHTML));
   gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/scripts/*.js").on("change", gulp.series(minifyJS));
+  gulp.watch("source/scripts/*.js").on("change", sync.reload);
 }
-
 export default gulp.series(styles, server, watcher);
 
 //images
@@ -62,11 +63,10 @@ const optimizeImages = () => (
 		.pipe(imagemin([
       mozjpeg({progressive: true}), // quality: 75
       optipng({optimizationLevel: 3}),
-      svgo()
+      svgo([{removeAttrs: {attrs:['fill']}}])
     ]))
 		.pipe(gulp.dest('build/img'))
 );
-
 export {optimizeImages};
 
 // webp
@@ -77,21 +77,19 @@ const createWebp = async () => {
 }
 export {createWebp};
 
-// svg sprite
+// svg sprite - отключен
 const createSprite = async () => {
   gulp.src('source/img/sprite/*.svg')
-    .pipe(svgstore([
-      {removeAttrs: {attrs:['fill']}}
-   ]))
+    .pipe(svgstore())
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
 }
 export {createSprite};
 
-// htmlmin
+// htmlmin - отключен
 const minifyHTML = async () => {
   gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false })) // откл
     .pipe(gulp.dest('build'))
 }
 export {minifyHTML};
@@ -106,8 +104,8 @@ export {copyFonts};
 // js
 const minifyJS = async () => {
   gulp.src('source/scripts/*.js')
-    .pipe(uglify())
-    .pipe(rename("scripts.min.js"))
+    /* .pipe(uglify()) */
+    /* .pipe(rename("script.min.js")) */
     .pipe(gulp.dest('build/scripts'))
 }
 export {minifyJS};
