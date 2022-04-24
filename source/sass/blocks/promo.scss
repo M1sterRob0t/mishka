@@ -38,6 +38,9 @@
   box-sizing: border-box;
   padding: 0 30px;
 
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+
   &:hover {
     background-color: #59D5BC;
     box-shadow: 0 -5px 0 0px #59D5BC;

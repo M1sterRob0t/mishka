@@ -19,6 +19,8 @@
 
 .product {
   user-select: none;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &:hover .product__desc {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);

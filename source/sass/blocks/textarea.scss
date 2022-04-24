@@ -19,6 +19,9 @@
   color: #444444;
   z-index: 2;
 
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+
   &::placeholder {
     font-family: 'Open Sans';
     font-style: normal;

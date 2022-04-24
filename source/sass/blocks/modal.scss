@@ -11,6 +11,9 @@
   background: #FFFFFF;
   border: 1px solid #C6C6C6;
   box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .modal__title {
@@ -59,6 +62,9 @@
 
   background: #FFFFFF;
   border: 2px solid rgba(68, 68, 68, 0.1);
+
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
   cursor: pointer;
 
   &:hover {
@@ -84,7 +90,13 @@
   color: #FFFFFF;
   border: none;
 
+  transition-duration: 0.05s;
+  transition-timing-function: linear;
   cursor: pointer;
+
+  &:hover {
+    background-color: lighten(#63D1BB, 5%);
+  }
 }
 
 @media (min-width: $tablet-width) {

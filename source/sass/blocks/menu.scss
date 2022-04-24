@@ -6,8 +6,6 @@
   line-height: 24px; // 32 px pixelperfect
   color: #000000;
   z-index: 2;
-
-
 }
 
 @media (max-width: $tablet-width) {
@@ -72,6 +70,9 @@
   height: 100%;
   text-decoration: none;
   color: inherit;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &:hover .menu__text{
     opacity: 0.6;
