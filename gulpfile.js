@@ -32,7 +32,7 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream())
 }
-export {styles};
+export { styles };
 
 //server
 const server = (done) => {
@@ -59,23 +59,23 @@ export default gulp.series(styles, server, watcher);
 
 //images
 const optimizeImages = () => (
-	gulp.src('source/img/**/*.{jpg,png,svg}')
-		.pipe(imagemin([
-      mozjpeg({progressive: true}), // quality: 75
-      optipng({optimizationLevel: 3}),
-      svgo([{removeAttrs: {attrs:['fill']}}])
+  gulp.src('source/img/**/*.{jpg,png,svg}')
+    .pipe(imagemin([
+      mozjpeg({ progressive: true }), // quality: 75
+      optipng({ optimizationLevel: 3 }),
+      svgo([{ removeAttrs: { attrs: ['fill'] } }])
     ]))
-		.pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'))
 );
-export {optimizeImages};
+export { optimizeImages };
 
 // webp
 const createWebp = async () => {
-	gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest('build/img/webp'))
+  gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest('build/img/webp'))
 }
-export {createWebp};
+export { createWebp };
 
 // svg sprite
 const createSprite = async () => {
@@ -84,7 +84,7 @@ const createSprite = async () => {
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'))
 }
-export {createSprite};
+export { createSprite };
 
 // htmlmin
 const minifyHTML = async () => {
@@ -92,7 +92,7 @@ const minifyHTML = async () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
 }
-export {minifyHTML};
+export { minifyHTML };
 
 
 // fonts
@@ -100,22 +100,21 @@ const copyFonts = async () => {
   gulp.src('source/fonts/*.{woff,woff2}')
     .pipe(gulp.dest('build/fonts'))
 }
-export {copyFonts};
+export { copyFonts };
 
 // js
 const minifyJS = async () => {
   gulp.src('source/scripts/*.js')
-    /* .pipe(uglify()) */
-    /* .pipe(rename("script.min.js")) */
+    .pipe(uglify())
     .pipe(gulp.dest('build/scripts'))
-}
-export {minifyJS};
+  }
+export { minifyJS };
 
 // clean
 const clean = () => {
   return del(['build']);
 }
-export {clean};
+export { clean };
 
 //build
 const build = gulp.series(
@@ -129,4 +128,4 @@ const build = gulp.series(
     optimizeImages,
     createWebp)
 )
-export {build};
+export { build };

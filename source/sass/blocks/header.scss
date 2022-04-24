@@ -5,21 +5,18 @@
 
 .header__button {
   position: absolute;
-  right: 30px;
-  top: 29px;
+  right: 0px;
+  top: 0px;
 
-  width: 21px;
-  height: 20px;
-  background-image: url("../../img/menu.svg");
+  width: 79px;
+  height: 79px;
+  background-image: url("../../img/menu-close.svg");
   background-repeat: no-repeat;
   background-color: transparent;
+  background-position: center;
 
   border: none;
   cursor: pointer;
-
-  &--menu-opened {
-    background-image: url("../../img/menu-close.svg");
-  }
 
   &--menu-closed {
     background-image: url("../../img/menu.svg");

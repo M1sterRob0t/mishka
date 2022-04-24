@@ -4,11 +4,13 @@
   const menuButton = document.querySelector(`.header__button`);
 
   //Classes
-  const menuHiddenClass = `menu--closed`;
+  const menuClosedClass = `menu--closed`;
+  const buttonMenuClosedClass = `header__button--menu-closed`;
 
   // Events
   menuButton.addEventListener(`click`, () => {
-    menu.classList.toggle(menuHiddenClass);
-  })
+    menu.classList.toggle(menuClosedClass);
+    menuButton.classList.toggle(buttonMenuClosedClass);
+  });
 })();
 
