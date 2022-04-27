@@ -1,4 +1,5 @@
 @import "blocks/variables.scss";
+@import "blocks/page.scss";
 @import "blocks/menu.scss";
 @import "blocks/header.scss";
 @import "blocks/visually-hidden.scss";
@@ -18,11 +19,12 @@
 @import "blocks/products.scss";
 @import "blocks/creation.scss";
 @import "blocks/modal.scss";
-@import "blocks/overlay.scss";
+
 
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: swap;
   src: url("../fonts/opensans.woff") format("woff"),
 		url("../fonts/opensans.woff2") format("woff2");
 	font-weight: 400;
@@ -31,6 +33,7 @@
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: swap;
   src: url("../fonts/opensansbold.woff") format("woff"),
 		url("../fonts/opensansbold.woff2") format("woff2");
 	font-weight: 700;

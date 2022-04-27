@@ -1,5 +1,5 @@
 .products {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   background-color: #FFFFFF;
 }
 
@@ -19,6 +19,8 @@
 
 .product {
   user-select: none;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &:hover .product__desc {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -91,16 +93,17 @@
 }
 
 .product__cart-icon {
+  fill: #000000;
   opacity: 0.2;
   cursor: pointer;
 
   &:hover {
-    color: #63D1BB;
+    fill: #63D1BB;
     opacity: 1;
   }
 
   &:active {
-    color: #63D1BB;
+    fill: #63D1BB;
     opacity: 0.3;
   }
 }

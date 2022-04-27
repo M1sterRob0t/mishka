@@ -22,13 +22,16 @@
   background-color: transparent;
   box-shadow: inset 0px -2px 0px #000000;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 18px;
   color: #444444;
   z-index: 2;
+
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
 
   &::placeholder {
     font-family: inherit;
@@ -45,7 +48,7 @@
   }
 
   &:hover + .input__icon{
-    color: #62D1BA;
+    fill: #62D1BA;
   }
 
   &:focus {
@@ -54,13 +57,13 @@
   }
 
   &:focus + .input__icon{
-    color: #62D1BA;
+    fill: #62D1BA;
   }
 }
 
 .input__icon {
   position: absolute;
-  color: rgba(0, 0, 0, 0.2);
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .input--tel .input__icon {

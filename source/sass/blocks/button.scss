@@ -1,4 +1,5 @@
 .button {
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -13,6 +14,9 @@
 
   background: #FFFFFF;
   border: 2px solid #444444;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   cursor: pointer;
 

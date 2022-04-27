@@ -1,19 +1,10 @@
 .modal {
-  display: none;
-
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 10;
-
   box-sizing: border-box;
   width: 320px;
   height: 336px;
   margin: auto;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
 
   padding: 0 30px;
   padding-top: 27px;
@@ -21,9 +12,8 @@
   border: 1px solid #C6C6C6;
   box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
 
-  &--shown {
-    display: block;
-  }
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .modal__title {
@@ -72,6 +62,9 @@
 
   background: #FFFFFF;
   border: 2px solid rgba(68, 68, 68, 0.1);
+
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
   cursor: pointer;
 
   &:hover {
@@ -97,7 +90,13 @@
   color: #FFFFFF;
   border: none;
 
+  transition-duration: 0.05s;
+  transition-timing-function: linear;
   cursor: pointer;
+
+  &:hover {
+    background-color: lighten(#63D1BB, 5%);
+  }
 }
 
 @media (min-width: $tablet-width) {

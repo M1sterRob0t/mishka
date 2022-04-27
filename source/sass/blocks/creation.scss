@@ -1,10 +1,13 @@
 .creation {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
   user-select: none;
 
   padding-top: 22px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
@@ -80,6 +83,9 @@
   height: 76.8px;
   border: none;
   border-radius: 22px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
   cursor: pointer;
 
   &:hover .creation__video-icon{

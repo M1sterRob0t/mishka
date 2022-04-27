@@ -2,7 +2,8 @@
 <html lang="ru">
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Мишка</title>
@@ -10,7 +11,7 @@
 
 <body class="page">
   <header class="page__heder header">
-    <nav class="header__menu menu">
+    <nav class="header__menu menu menu--closed">
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
@@ -34,7 +35,7 @@
         <li class="menu__item menu__item--search">
           <a class="menu__link" href="">
             <svg class="menu__icon" width="18" height="18">
-              <use xlink:href="sprite.svg#search"></use>
+              <use xlink:href="img/sprite.svg#search"></use>
             </svg>
             <span class="menu__text">Поиск по сайту</span>
           </a>
@@ -42,7 +43,7 @@
         <li class="menu__item menu__item--cart">
           <a class="menu__link" href="">
             <svg class="menu__icon" width="21" height="18">
-              <use xlink:href="sprite.svg#cart"></use>
+              <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
             <span class="menu__text">Корзина: пока пуста</span>
           </a>
@@ -76,9 +77,9 @@
         <li class="products__item product">
           <a class="product__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/catalog/webp/photo-1-desktop.webp, img/catalog/webp/photo-1-desktop@2x.webp 2x" media="(min-width: 1150px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-1-tablet.webp, img/catalog/webp/photo-1-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-1-mobile.webp, iimg/catalog/webp/photo-1-mobile.webp 2x">
+              <source type="image/webp" srcset="img/webp/catalog/photo-1-desktop.webp, img/webp/catalog/photo-1-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-1-tablet.webp, img/webp/catalog/photo-1-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-1-mobile.webp, iimg/webp/catalog/photo-1-mobile.webp 2x">
 
               <source srcset="img/catalog/photo-1-desktop.jpg, img/catalog/photo-1-desktop@2x.jpg 2x" media="(min-width: 1150px)">
               <source srcset="img/catalog/photo-1-tablet.jpg, img/catalog/photo-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -93,7 +94,7 @@
             <div class="product__price-wrapper">
               <p class="product__price">1 200 руб.</p>
               <svg class="product__cart-icon" width="21" height="18">
-                <use xlink:href="sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
             </div>
           </div>
@@ -102,9 +103,9 @@
         <li class="products__item product">
           <a class="product__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/catalog/webp/photo-2-desktop.webp, img/catalog/webp/photo-2-desktop@2x.webp 2x" media="(min-width: 1150px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-2-tablet.webp, img/catalog/webp/photo-2-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-2-mobile.webp, iimg/catalog/webp/photo-2-mobile.webp 2x">
+              <source type="image/webp" srcset="img/webp/catalog/photo-2-desktop.webp, img/webp/catalog/photo-2-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-2-tablet.webp, img/webp/catalog/photo-2-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-2-mobile.webp, iimg/webp/catalog/photo-2-mobile.webp 2x">
 
               <source srcset="img/catalog/photo-2-desktop.jpg, img/catalog/photo-2-desktop@2x.jpg 2x" media="(min-width: 1150px)">
               <source srcset="img/catalog/photo-2-tablet.jpg, img/catalog/photo-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -119,7 +120,7 @@
             <div class="product__price-wrapper">
               <p class="product__price">690 руб.</p>
               <svg class="product__cart-icon" width="21" height="18">
-                <use xlink:href="sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
             </div>
           </div>
@@ -128,9 +129,9 @@
         <li class="products__item product">
           <a class="product__link" href="#">
             <picture>
-              <source type="image/webp" srcset="img/catalog/webp/photo-3-desktop.webp, img/catalog/webp/photo-3-desktop@2x.webp 2x" media="(min-width: 1150px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-3-tablet.webp, img/catalog/webp/photo-3-tablet@2x.webp 2x" media="(min-width: 768px)">
-              <source type="image/webp" srcset="img/catalog/webp/photo-3-mobile.webp, iimg/catalog/webp/photo-3-mobile.webp 2x">
+              <source type="image/webp" srcset="img/webp/catalog/photo-3-desktop.webp, img/webp/catalog/photo-3-desktop@2x.webp 2x" media="(min-width: 1150px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-3-tablet.webp, img/webp/catalog/photo-3-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source type="image/webp" srcset="img/webp/catalog/photo-3-mobile.webp, img/webp/catalog/photo-3-mobile.webp 2x">
 
               <source srcset="img/catalog/photo-3-desktop.jpg, img/catalog/photo-3-desktop@2x.jpg 2x" media="(min-width: 1150px)">
               <source srcset="img/catalog/photo-3-tablet.jpg, img/catalog/photo-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
@@ -145,7 +146,7 @@
             <div class="product__price-wrapper">
               <p class="product__price">1 500 руб.</p>
               <svg class="product__cart-icon"width="21" height="18">
-                <use xlink:href="sprite.svg#cart"></use>
+                <use xlink:href="img/sprite.svg#cart"></use>
               </svg>
             </div>
           </div>
@@ -196,7 +197,7 @@
     <div class="footer__logo">
       <a class="footer__logo-link" href="index.html">
         <svg class="footer__logo-image" width="102" height="34" alt="Логотип 'Мишка'">
-          <use xlink:href="sprite.svg#logo-footer"></use>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
     </div>
@@ -204,21 +205,21 @@
       <li class="socials__item socials__item--instagram">
         <a class="socials__link" href="#">
           <svg class="socials__icon" width="22" height="22" alt="Instagram">
-            <use xlink:href="sprite.svg#instagram"></use>
+            <use xlink:href="img/sprite.svg#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="socials__item socials__item--facebook">
         <a class="socials__link" href="#">
           <svg class="socials__icon" width="15" height="28" alt="Facebook">
-            <use xlink:href="sprite.svg#facebook"></use>
+            <use xlink:href="img/sprite.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="socials__item socials__item--twitter">
         <a class="socials__link" href="#">
           <svg class="socials__icon" width="23" height="20" alt="Twitter">
-            <use xlink:href="sprite.svg#twitter"></use>
+            <use xlink:href="img/sprite.svg#twitter"></use>
           </svg>
         </a>
       </li>
@@ -227,11 +228,12 @@
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__desc">Разработано</p>
         <svg class="copyright__logo" width="27" height="35" alt="Логотип HTML Академии">
-          <use xlink:href="sprite.svg#academy"></use>
+          <use xlink:href="img/sprite.svg#academy"></use>
         </svg>
       </a>
     </div>
   </footer>
+  <script src="scripts/mobile-menu.js"></script>
+  <script src="scripts/modal_catalog.js"></script>
 </body>
-
 </html>
