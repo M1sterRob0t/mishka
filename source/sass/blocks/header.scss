@@ -24,6 +24,11 @@
 
 }
 
+.header--no-js .header__button {
+  display: none;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .header__button {

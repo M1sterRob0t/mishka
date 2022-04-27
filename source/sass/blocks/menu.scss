@@ -16,6 +16,18 @@
   .menu--closed .menu__item--active {
     display: block;
   }
+
+  .menu--no-js .menu__item {
+    display: block;
+  }
+
+  .menu--no-js .menu__item--tablet {
+    display: none;
+  }
+
+  .menu--no-js .menu__item--desktop {
+    display: none;
+  }
 }
 
 .menu__list {

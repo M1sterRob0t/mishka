@@ -10,8 +10,8 @@
 </head>
 
 <body class="page">
-  <header class="page__heder header">
-    <nav class="header__menu menu menu--closed">
+  <header class="page__heder header header--no-js">
+    <nav class="header__menu menu menu--closed menu--no-js">
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
@@ -170,6 +170,7 @@
       </div>
     </section>
   </main>
+
   <section class="page__modal modal">
     <h2 class="modal__title">Добавить<br> в корзину</h2>
     <p class="modal__desc">Выбирите размер:</p>
@@ -192,7 +193,8 @@
       <button class="modal__button" type="submit">Добавить</button>
     </form>
   </section>
-  <div class="overlay"></div>
+  <div class="page__overlay overlay"></div>
+
   <footer class="page__footer footer">
     <div class="footer__logo">
       <a class="footer__logo-link" href="index.html">
