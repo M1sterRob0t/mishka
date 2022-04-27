@@ -19,6 +19,12 @@ import uglify from "gulp-uglify";
 import del from "del";
 
 const sass = gulpSass(scss);
+const config = {
+  plugins: [{
+    removeAttrs: {attrs: 'fill'},
+  }]
+}
+
 
 //styles
 const styles = () => {
@@ -63,7 +69,17 @@ const optimizeImages = () => (
     .pipe(imagemin([
       mozjpeg({ progressive: true }), // quality: 75
       optipng({ optimizationLevel: 3 }),
-      svgo([{ removeAttrs: { attrs: ['fill'] } }])
+      svgo([
+        'svgo',
+        {
+          plugins: [
+            {
+              name: 'removeViewBox',
+              active: false
+            },
+          ],
+        },
+      ])
     ]))
     .pipe(gulp.dest('build/img'))
 );

@@ -10,7 +10,7 @@
     "start": "gulp",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\"",
-    "images": "gulp images",
+    "images": "gulp optimizeImages",
     "webp": "gulp createWebp",
     "sprite": "gulp createSprite",
     "html": "gulp minifyHTML",

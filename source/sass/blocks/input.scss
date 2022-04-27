@@ -48,7 +48,7 @@
   }
 
   &:hover + .input__icon{
-    color: #62D1BA;
+    fill: #62D1BA;
   }
 
   &:focus {
@@ -57,13 +57,13 @@
   }
 
   &:focus + .input__icon{
-    color: #62D1BA;
+    fill: #62D1BA;
   }
 }
 
 .input__icon {
   position: absolute;
-  color: rgba(0, 0, 0, 0.2);
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .input--tel .input__icon {

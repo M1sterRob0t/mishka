@@ -79,7 +79,7 @@
   }
 
   &:hover .menu__icon{
-    color: #63D1BB;
+    fill: #63D1BB;
   }
 
   &:active {
@@ -92,7 +92,7 @@
   left: 32px;
   top: 32px;
 
-  color: rgba(0, 0, 0, 0.2);
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .menu__link--logo {

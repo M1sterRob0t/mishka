@@ -93,16 +93,17 @@
 }
 
 .product__cart-icon {
+  fill: #000000;
   opacity: 0.2;
   cursor: pointer;
 
   &:hover {
-    color: #63D1BB;
+    fill: #63D1BB;
     opacity: 1;
   }
 
   &:active {
-    color: #63D1BB;
+    fill: #63D1BB;
     opacity: 0.3;
   }
 }
