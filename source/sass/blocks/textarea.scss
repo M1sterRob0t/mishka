@@ -11,7 +11,7 @@
   box-sizing: border-box;
   box-shadow: none;
 
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
@@ -23,7 +23,7 @@
   transition-timing-function: linear;
 
   &::placeholder {
-    font-family: 'Open Sans';
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 17px;
