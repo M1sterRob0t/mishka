@@ -1,3 +1,11 @@
+.page {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+}
+
 .page__modal {
   display: none;
 
@@ -29,3 +37,26 @@
     display: block;
   }
 }
+
+
+
+@media (min-width:$tablet-width) {
+  .page {
+    width: $tablet-width;
+  }
+
+  .page__content {
+    margin-top: -67px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .page {
+    width: $desktop-width;
+  }
+
+  .page__content {
+    margin-top: -67px;
+  }
+}
+
