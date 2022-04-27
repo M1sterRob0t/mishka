@@ -1,0 +1,40 @@
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: inherit;
+  text-decoration: none;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+
+  &:hover .copyright__logo {
+    fill: #46C1AE;
+  }
+
+  &:active .copyright__logo {
+    fill: #46C1AE;
+    opacity: 0.3;
+  }
+}
+
+.copyright__desc {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+
+  margin-right: 28px;
+}
+
+.copyright__logo {
+  fill: #63D1BB;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__desc  {
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,53 @@
+.slider__controls {
+  display: flex;
+}
+
+.slider__button {
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  height: 52px;
+
+  background-color: #FFFFFF;
+  border: 1px solid #ECECEC;
+
+  cursor: pointer;
+
+  &:hover .slider__button-icon{
+    opacity: 0.6;
+  }
+
+  &:active .slider__button-icon{
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    position: relative;
+  }
+
+  .slider__controls {
+    position: absolute;
+    right: 26px;
+    bottom: 14px;
+
+    width: 135px;
+    justify-content: space-between;
+  }
+
+  .slider__button {
+    width: 50px;
+    height: 26px;
+    border: none;
+    background-position: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__controls {
+    bottom: 17px;
+    right: -25px;
+  }
+}
+
