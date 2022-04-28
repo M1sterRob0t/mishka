@@ -1,11 +1,15 @@
 .contacts {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: normal;
-
-  padding: 0 30px;
-  padding-top: 39px;
   padding-bottom: 40px;
-  background-color: #ffffff;
+  padding-top: 39px;
+}
+
+.contacts__inner {
+  box-sizing: border-box;
+  max-width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .contacts__title {
@@ -61,8 +65,7 @@
 
 .contacts__map {
   height: 454px;
-  width: 320px;
-  margin-left: -30px;
+  width: 100%;
 
   background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -78,13 +81,25 @@
 
 .contacts__button {
   letter-spacing: 0.3px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.contacts__iframe {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 50px;
     padding-top: 70px;
     padding-bottom: 56px;
+  }
+
+  .contacts__inner {
+    box-sizing: border-box;
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 50px;
   }
 
   .contacts__title {
@@ -127,13 +142,12 @@
   }
 
   .contacts__map {
-    width: 768px;
+    width: 100%;
     height: 457px;
     background-image: url("../../img/index/map-pin.svg"), url("../../img/index/map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: top 140px left 360px, center;
 
-    margin-left: -50px;
     margin-bottom: 56px;
 
     @media (min-resolution: 2dppx) {
@@ -153,7 +167,7 @@
   .contacts {
     position: relative;
 
-    margin: 0 50px;
+    margin: 0;
     padding: 0;
     padding-top: 74px;
     padding-left: 175px;
@@ -165,6 +179,10 @@
       "info map"
       "button map";
     grid-template-columns: 2fr 3fr;
+  }
+
+  .contacts__inner {
+    padding: 0;
   }
 
   .contacts__title {
@@ -185,6 +203,7 @@
   .contacts__info {
     grid-area: info;
     display: block;
+
 
     margin-bottom: 53px;
   }

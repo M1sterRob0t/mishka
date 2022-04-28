@@ -62,6 +62,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .content--index {
+    max-width: $desktop-width;
+    box-sizing: border-box;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+
   .content__title-wrapper {
     padding-top: 100px;
     padding-bottom: 116px;

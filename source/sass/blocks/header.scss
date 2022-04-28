@@ -34,4 +34,13 @@
   .header__button {
     display: none;
   }
+
+  .header__menu {
+    z-index: 2;
+  }
+
+  .header__promo {
+    z-index: 1;
+    margin-top: -67px;
+  }
 }

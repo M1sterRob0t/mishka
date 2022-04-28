@@ -2,14 +2,21 @@
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-style: normal;
 
-  padding: 0 30px;
-  padding-top: 32px;
-  padding-bottom: 42px;
-
-  background-color: #ffffff;
   background-image: url("../../img/zigzag-line-desktop.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
+
+
+}
+
+.main-product__inner {
+  box-sizing: border-box;
+  max-width: $mobile-width;
+  padding: 0 30px;
+  padding-top: 32px;
+  padding-bottom: 42px;
+  margin: 0 auto;
 }
 
 .main-product__title {
@@ -99,9 +106,15 @@
 
 @media (min-width:$tablet-width) {
   .main-product {
-    padding: 40px 50px 63px 50px;
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .main-product__inner {
+    box-sizing: border-box;
+    max-width: $tablet-width;
+    margin: 0 auto;
+    padding: 40px 50px 63px 50px;
   }
 
   .main-product__title-wrapper {
@@ -184,13 +197,13 @@
 }
 
 @media (min-width:$desktop-width) {
-  .main-product {
+  .main-product__inner {
+    max-width: $desktop-width;
+
     position: relative;
     padding: 0;
     padding-top: 125px;
     padding-bottom: 93px;
-
-    margin: 0 50px;
   }
 
   .main-product__title-wrapper {
@@ -228,7 +241,7 @@
   .main-product__image {
     position: absolute;
     top: 54px;
-    right: 0px;
+    right: 0;
 
     width: 525px;
     height: 636px;

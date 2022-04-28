@@ -1,16 +1,19 @@
 .reviews {
   font-family: 'Open Sans', 'Arial', sans-serif;
 
-  position: relative;
 
-  padding: 0 30px;
-  padding-top: 15px;
-  padding-bottom: 50px;
-
-  background-color: #ffffff;
   background-image: url("../../img/zigzag-line-desktop.svg");
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.reviews__inner {
+  box-sizing: border-box;
+  max-width: $mobile-width;
+  padding: 0 30px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -30,17 +33,26 @@
 
 @media (min-width: $tablet-width) {
   .reviews {
-    padding: 84px 50px 55px 50px;
+    padding: 0;
     background-image: url("../../img/zigzag-line-desktop.svg"), url("../../img/index/review.jpg");
     background-position: bottom, left top;
     background-size: contain, auto;
 
-    padding-bottom: 96px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/zigzag-line-desktop.svg"), url("../../img/index/review@2x.jpg");
       background-size: contain, 350px 457px;
     }
+  }
+
+  .reviews__inner {
+    position: relative;
+    box-sizing: border-box;
+    max-width: $tablet-width;
+    padding: 84px 50px 55px 50px;
+    padding-bottom: 96px;
+    margin: 0 auto;
+
   }
 
   .reviews__title {
@@ -61,9 +73,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .reviews {
-    margin: 0 50px;
+  .reviews__inner {
+    max-width: $desktop-width;
     padding-left: 175px;
+    padding-right: 50px;
     padding-top: 79px;
     padding-bottom: 147px;
   }
@@ -78,5 +91,4 @@
   .reviews__button {
     right: 0;
   }
-
 }
