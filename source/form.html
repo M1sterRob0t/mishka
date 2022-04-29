@@ -15,52 +15,68 @@
       <ul class="menu__list">
         <li class="menu__item menu__item--logo menu__item--active">
           <a class="menu__link menu__link--logo" href="index.html">
-            <picture>
-              <source srcset="img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
-              <source srcset="img/mishka-logo-tablet.svg" media="(min-width: 768px)">
-              <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
-            </picture>
+            <div class="menu__link-inner">
+              <picture>
+                <source srcset="img/mishka-logo-desktop.svg" media="(min-width: 1150px)">
+                <source srcset="img/mishka-logo-tablet.svg" media="(min-width: 768px)">
+                <img class="menu__image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип 'Мишка'">
+              </picture>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--catalog">
           <a class="menu__link" href="catalog.html">
-            <span class="menu__text">Каталог товаров</span>
+            <div class="menu__link-inner">
+              <span class="menu__text">Каталог товаров</span>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--form">
           <a class="menu__link" href="form.html">
-            <span class="menu__text">Вязание на заказ</span>
+            <div class="menu__link-inner">
+              <span class="menu__text">Вязание на заказ</span>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--search">
           <a class="menu__link" href="">
-            <svg class="menu__icon" width="18" height="18">
-              <use xlink:href="img/sprite.svg#search"></use>
-            </svg>
-            <span class="menu__text">Поиск по сайту</span>
+            <div class="menu__link-inner">
+              <svg class="menu__icon" width="18" height="18">
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <span class="menu__text">Поиск по сайту</span>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--cart">
           <a class="menu__link" href="">
-            <svg class="menu__icon" width="21" height="18">
-              <use xlink:href="img/sprite.svg#cart"></use>
-            </svg>
-            <span class="menu__text">Корзина: пока пуста</span>
+            <div class="menu__link-inner">
+              <svg class="menu__icon" width="21" height="18">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg>
+              <span class="menu__text">Корзина: пока пуста</span>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--delivery menu__item--tablet">
           <a class="menu__link" href="">
-            <span class="menu__text">Бесплатная доставка по России</span>
+            <div class="menu__link-inner">
+              <span class="menu__text">Бесплатная доставка по России</span>
+            </div>
           </a>
         </li>
         <li class="menu__item  menu__item--new menu__item--desktop">
           <a class="menu__link" href="">
-            <span class="menu__text">Новые поступления</span>
+            <div class="menu__link-inner">
+              <span class="menu__text">Новые поступления</span>
+            </div>
           </a>
         </li>
         <li class="menu__item menu__item--sale menu__item--desktop">
           <a class="menu__link" href="">
-            <span class="menu__text">Распродажа</span>
+            <div class="menu__link-inner">
+              <span class="menu__text">Распродажа</span>
+            </div>
           </a>
         </li>
       </ul>
@@ -150,21 +166,24 @@
             <div class="form__input-wrapper">
               <label class="form__label form__label--input" for="input-1">Имя:</label>
               <div class="form__input input">
-                <input class="input__body" id="input-1" type="text" name="name" placeholder="Введите ваше имя*" required>
+                <input class="input__body" id="input-1" type="text" name="name" placeholder="Введите ваше имя*"
+                  required>
               </div>
             </div>
 
             <div class="form__input-wrapper">
               <label class="form__label form__label--input" for="input-2">Фамилия:</label>
               <div class="form__input input">
-                <input class="input__body" id="input-2" type="text" name="surname" placeholder="Укажите фамилию*"  required>
+                <input class="input__body" id="input-2" type="text" name="surname" placeholder="Укажите фамилию*"
+                  required>
               </div>
             </div>
 
             <div class="form__input-wrapper">
               <label class="form__label form__label--input" for="input-3">Отчество:</label>
               <div class="form__input input">
-                <input class="input__body" id="input-3" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                <input class="input__body" id="input-3" type="text" name="patronymic"
+                  placeholder="Отчество, если желаете">
               </div>
             </div>
           </fieldset>
@@ -174,7 +193,8 @@
           <fieldset class="form__item form__item--gray form__item--tel">
             <legend class="form__name form__name--tel">ТЕЛ</legend>
             <div class="form__input input input--tel">
-              <input class="input__body" type="tel" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*"  required>
+              <input class="input__body" type="tel" pattern="+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="phone"
+                placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="input__icon" width="25" height="24">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
@@ -186,7 +206,7 @@
           <fieldset class="form__item form__item--gray form__item--email">
             <legend class="form__name form__name--mail">E-mail</legend>
             <div class="form__input input input--mail">
-              <input class="input__body " type="email" name="email" placeholder="Ваш Email*"  required>
+              <input class="input__body " type="email" name="email" placeholder="Ваш Email*" required>
               <svg class="input__icon" width="32" height="21">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
@@ -197,7 +217,8 @@
         <div class="form__item-container">
           <fieldset class="form__item form__item--comment">
             <legend class="form__name form__name--comment">ДОП</legend>
-            <textarea class="form__textarea textarea" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__textarea textarea" name="comment"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
         </div>
 
@@ -252,4 +273,5 @@
   </footer>
   <script src="scripts/mobile-menu.js"></script>
 </body>
+
 </html>
