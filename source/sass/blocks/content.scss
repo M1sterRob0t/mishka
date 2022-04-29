@@ -32,13 +32,16 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .content__title-wrapper {
     padding-top: 100px;
     padding-bottom: 88px;
 
     background-image: url("../../img/zigzag-fill-desktop.svg");
     background-position: bottom;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+
+    margin-top: -67px;
   }
 
   .content__title {
@@ -75,8 +78,8 @@
 
     background-image: url("../../img/zigzag-fill-desktop.svg");
     background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
+    background-repeat: repeat-x;
+    background-size: auto 36px;
   }
 
   .content__title {
