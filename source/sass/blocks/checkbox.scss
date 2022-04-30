@@ -9,6 +9,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + .checkbox__label:before{
+    outline: 3px solid #62D1BA;
+  }
 }
 
 .checkbox__label {
