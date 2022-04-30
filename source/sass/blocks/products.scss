@@ -19,6 +19,7 @@
 
 
 @media (min-width: $tablet-width) {
+
   .products__item:not(:last-child) {
     margin-bottom: 52px;
   }
@@ -30,6 +31,7 @@
     display: grid;
     grid-template-columns: 316px 316px 316px;
     justify-content: space-between;
+    grid-row-gap: 50px;
   }
 
   .products__item:not(:last-child) {
