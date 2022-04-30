@@ -5,7 +5,7 @@
 .review__text {
   font-weight: 400;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 29px;
   color: #444444;
 
   margin: 0;
@@ -34,9 +34,9 @@
 @media (min-width: $tablet-width) {
   .review__text {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 28px;
 
-    margin-bottom: 58px;
+    margin-bottom: 62px;
 
     & br {
       display: none;
@@ -53,10 +53,10 @@
 @media (min-width: $desktop-width) {
   .review__text {
     font-size: 17px;
-    line-height: 30px;
+    line-height: 29px;
 
     margin-right: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 43px;
   }
 
   .review__author {
