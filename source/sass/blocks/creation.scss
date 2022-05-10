@@ -1,5 +1,5 @@
 .creation {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   border: 1px solid #ECECEC;
   background-color: #FFFFFF;
   user-select: none;
@@ -52,10 +52,12 @@
   box-sizing: border-box;
   width: 100%;
   height: 150px;
+  background-color: #F1F1F1;
   background-image: url("../../img/catalog/video-mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
+  align-self: center;
   margin-bottom: 35px;
 
   @media (min-resolution: 2dppx) {
@@ -144,7 +146,7 @@
     background-image: url("../../img/catalog/video-tablet.jpg");
     background-position: center;
 
-    margin-bottom: 38px;
+    margin-bottom: 36px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/catalog/video-tablet@2x.jpg");

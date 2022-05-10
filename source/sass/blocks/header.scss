@@ -24,9 +24,73 @@
 
 }
 
+.header--no-js .header__button {
+  display: none;
+}
+
+.header__title-wrapper {
+  background-color: #F1F1F1;
+  padding: 73.5px 30px;
+}
+
+.header__title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  color: #000000;
+  text-align: center;
+
+  margin: 0;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .header__button {
     display: none;
+  }
+
+  .header__menu {
+    z-index: 2;
+  }
+
+  .header__title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 88px;
+
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+
+    margin-top: -67px;
+  }
+
+  .header__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .header__promo {
+    z-index: 1;
+    margin-top: -67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__title-wrapper {
+    padding-top: 100px;
+    padding-bottom: 116px;
+
+    background-image: url("../../img/zigzag-fill-desktop.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 36px;
+  }
+
+  .header__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

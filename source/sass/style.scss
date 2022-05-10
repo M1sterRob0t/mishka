@@ -1,73 +1,29 @@
-@import "blocks/variables.scss";
+@import "blocks/global/fonts.scss";
+@import "blocks/global/variables.scss";
+@import "blocks/global/visually-hidden.scss";
 @import "blocks/page.scss";
-@import "blocks/menu.scss";
+@import "blocks/content.scss";
 @import "blocks/header.scss";
-@import "blocks/visually-hidden.scss";
+@import "blocks/menu.scss";
 @import "blocks/button.scss";
 @import "blocks/promo.scss";
+@import "blocks/promo-block.scss";
 @import "blocks/main-product.scss";
 @import "blocks/features.scss";
 @import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/slider.scss";
 @import "blocks/contacts.scss";
+@import "blocks/socials.scss";
+@import "blocks/copyright.scss";
 @import "blocks/footer.scss";
-@import "blocks/content.scss";
 @import "blocks/radio.scss";
 @import "blocks/checkbox.scss";
 @import "blocks/input.scss";
 @import "blocks/textarea.scss";
 @import "blocks/form.scss";
 @import "blocks/products.scss";
+@import "blocks/product.scss";
 @import "blocks/creation.scss";
 @import "blocks/modal.scss";
 
-
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: swap;
-  src: url("../fonts/opensans.woff") format("woff"),
-		url("../fonts/opensans.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-display: swap;
-  src: url("../fonts/opensansbold.woff") format("woff"),
-		url("../fonts/opensansbold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-}
-
-html {
-  background-color: #000000;
-}
-
-body {
-  width: 320px;
-  margin: 0 auto;
-
-  background-color: #ffffff;
-  font-family: "Open Sans";
-}
-
-@media (min-width:$tablet-width) {
-  body {
-    width: $tablet-width;
-  }
-
-  .page__content {
-    margin-top: -67px;
-  }
-}
-
-@media (min-width:$desktop-width) {
-  body {
-    width: $desktop-width;
-  }
-
-  .page__content {
-    margin-top: -67px;
-  }
-}

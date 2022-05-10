@@ -1,11 +1,15 @@
 .features {
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
 
   background-color: #ffffff;
   padding: 0 30px;
   padding-top: 32px;
   padding-bottom: 15px;
+
+  box-sizing: border-box;
+  max-width: $mobile-width;
+  margin: 0 auto;
 }
 
 .features__title {
@@ -51,6 +55,10 @@
 
 @media (min-width: $tablet-width) {
   .features {
+    box-sizing: border-box;
+    max-width: $tablet-width;
+    margin: 0 auto;
+
     padding: 50px;
     padding-top: 58px;
     padding-bottom: 26px;
@@ -110,7 +118,8 @@
 
 @media (min-width: $desktop-width) {
   .features {
-    margin: 0 50px;
+    max-width: $desktop-width;
+    margin: 0 auto;
     padding: 0 175px;
     padding-top: 72px;
     padding-bottom: 36px;

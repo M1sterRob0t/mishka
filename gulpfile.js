@@ -1,22 +1,22 @@
-import gulp from "gulp";
-import plumber from "gulp-plumber";
-import sourcemap from "gulp-sourcemaps";
+import gulp from 'gulp';
+import plumber from 'gulp-plumber';
+import sourcemap from 'gulp-sourcemaps';
 import scss from 'sass';
 import gulpSass from 'gulp-sass';
-import postcss from "gulp-postcss";
-import csso from "postcss-csso";
-import autoprefixer from "autoprefixer";
-import sync from "browser-sync";
-import imagemin from "gulp-imagemin";
-import mozjpeg from "imagemin-mozjpeg";
-import optipng from "imagemin-optipng";
-import svgo from "imagemin-svgo";
-import webp from "gulp-webp";
-import svgstore from "gulp-svgstore";
-import rename from "gulp-rename";
-import htmlmin from "gulp-htmlmin";
-import uglify from "gulp-uglify";
-import del from "del";
+import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import autoprefixer from 'autoprefixer';
+import sync from 'browser-sync';
+import imagemin from 'gulp-imagemin';
+import mozjpeg from 'imagemin-mozjpeg';
+import optipng from 'imagemin-optipng';
+import svgo from 'imagemin-svgo';
+import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
+import rename from 'gulp-rename';
+import htmlmin from 'gulp-htmlmin';
+import uglify from 'gulp-uglify';
+import del from 'del';
 
 const sass = gulpSass(scss);
 const config = {
@@ -28,14 +28,14 @@ const config = {
 
 //styles
 const styles = () => {
-  return gulp.src("source/sass/style.scss")
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer(), csso()]))
-    .pipe(rename("style.min.css"))
+    .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('../css'))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest('build/css'))
     .pipe(sync.stream())
 }
 export { styles };
@@ -55,11 +55,11 @@ const server = (done) => {
 
 //watcher
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-  gulp.watch("source/*.html").on("change", gulp.series(minifyHTML));
-  gulp.watch("source/*.html").on("change", sync.reload);
-  gulp.watch("source/scripts/*.js").on("change", gulp.series(minifyJS));
-  gulp.watch("source/scripts/*.js").on("change", sync.reload);
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/*.html').on('change', gulp.series(minifyHTML));
+  gulp.watch('source/*.html').on('change', sync.reload);
+  gulp.watch('source/scripts/*.js').on('change', gulp.series(minifyJS));
+  gulp.watch('source/scripts/*.js').on('change', sync.reload);
 }
 export default gulp.series(styles, server, watcher);
 

@@ -9,6 +9,10 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:focus + .radio__label:before{
+    outline: 3px solid #62D1BA;
+  }
 }
 
 .radio__label {
@@ -65,7 +69,7 @@
   }
 }
 
-.radio__input:checked+.radio__label::after {
+.radio__input:checked + .radio__label::after {
   display: block;
 }
 
