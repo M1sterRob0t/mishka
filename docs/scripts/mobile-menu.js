@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector(".header"),s=e.querySelector(".menu"),t=e.querySelector(".header__button");e.classList.remove("header--no-js"),s.classList.remove("menu--no-js"),t.addEventListener("click",()=>{s.classList.toggle("menu--closed"),t.classList.toggle("header__button--menu-closed")})}();

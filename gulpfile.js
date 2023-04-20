@@ -17,6 +17,7 @@ import rename from 'gulp-rename';
 import htmlmin from 'gulp-htmlmin';
 import uglify from 'gulp-uglify';
 import del from 'del';
+import replace from 'gulp-replace';
 
 const sass = gulpSass(scss);
 const config = {
@@ -32,6 +33,7 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(replace('url("../../img/', 'url("../img/'))
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('../css'))

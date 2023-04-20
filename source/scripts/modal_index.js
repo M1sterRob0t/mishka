@@ -4,7 +4,6 @@
   const modal = document.querySelector(`.modal`);
   const modalButton = modal.querySelector(`.modal__button`);
   const overlay = document.querySelector(`.page__overlay`);
-  console.log(modalButton);
 
   //Classes
   const showModalClass = `page__modal--shown`;
